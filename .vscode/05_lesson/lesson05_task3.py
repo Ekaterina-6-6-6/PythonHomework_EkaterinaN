@@ -12,7 +12,7 @@ driver.get('http://the-internet.herokuapp.com/inputs')
 sleep(3)
 
 input_field = driver.find_element(By.TAG_NAME, 'input')
-input_field.send_keys('Sky')
+input_field.send_keys('12345')
 
 sleep(5)
 
@@ -20,7 +20,7 @@ input_field.clear()
 
 sleep(5)
 
-input_field.send_keys('Pro')
+input_field.send_keys('54321')
 
 sleep(5)
 
