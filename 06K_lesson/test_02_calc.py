@@ -27,4 +27,5 @@ def test_calculator(browser):
     result = WebDriverWait(browser, 46).until(
         EC.text_to_be_present_in_element((By.CSS_SELECTOR, ".screen"), "15")
     )
-    assert result
+    result = browser.find_element(By.CSS_SELECTOR, ".screen").text
+    assert result == "15"
